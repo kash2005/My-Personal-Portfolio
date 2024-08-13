@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="w-full h-full absolute bg-white">
       <Navbar />
-      {/* <Hero /> */}
+      <Hero />
     </div>
   )
 }

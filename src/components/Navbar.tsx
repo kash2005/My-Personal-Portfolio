@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className='flex justify-between items-center text-black py-3 px-8 md:px-32 bg-transparent border-b border-neutral-900'>
+    <header className='flex justify-between items-center text-black py-3 px-8 md:px-32 bg-transparent'>
       <a href='#'>
         <img src="./src/assets/logo.png" alt='' className='w-57 h-[33] hover:scale-105 transition-all'></img>
       </a>  

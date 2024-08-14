@@ -1,42 +1,20 @@
-import { useEffect,useState } from "react";
 
-const Hero = () => {
-        const [currentText, setCurrentText] = useState(0);
-        const texts = [
-            '<Software Engineer/>',
-            '<Front-End Developer/>',
-            '<UI-UX Designer/>',
-        ];
-    
-        useEffect(() => {
-            const interval = setInterval(() => {
-                setCurrentText((prev) => (prev === texts.length - 1 ? 0 : prev + 1));
-            }, 3000); // Change text every 3 seconds
-    
-            return () => clearInterval(interval);
-        }, []);    
-
+const About = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4 md:pl-40">
+    <div className="pt-6 md:pr-40">
         <div className="flex flex-wrap">
+            <div className="w-full lg:w-1/2">
+                <div className="flex items-center justify-center">
+                    <img src="./src/assets/vector2.png" alt="Base" className="object-cover"/>
+                    <img src="./src/assets/p.png" alt="Overlay" className="absolute max-w-sm mt-20 object-cover"/>
+                </div>
+            </div>
             <div className="w-full lg:w-1/2">
                 <div className="flex flex-col items-center lg:items-start">
 
-                    <h1 className="pt-16 pb-1 text-2xl text-[#001845]  lg:mt-16 lg:text-xl">Hi, I’m</h1>
-                    <h1 className="pb-1 text-5xl text-[#001845] font-semibold lg:text-4xl">Kashmi Fernando</h1>
-                    <h1 className="pb-1 text-xl text-[#001845] lg:text-base">I'm 19 years old.</h1>
-                    <h1 className="pb-3 text-xl text-[#001845] lg:text-base">I'm a design-focused and passionate.</h1>
-
-                    <div className="pb-7 overflow-hidden w-full flex items-center justify-center">
-                        <div className="flex transition-transform duration-500"
-                        style={{ transform: `translateX(-${currentText * 100}%)`, width: `${texts.length * 100}%` }}>
-                            {texts.map((text, index) => (
-                                <div key={index} className="w-full flex-shrink-0 flex text-[#001845] text-3xl font-semibold">
-                                    {text}
-                                </div>
-                            ))}
-                        </div>
-                    </div>
+                    <h1 className="pt-16 pb-1 text-[rgba(0,0,0,0.6)] lg:mt-16">let me introduce myself</h1>
+                    <h1 className="pb-12 text-3xl font-semibold text-[#001845]">About me</h1>
+                    <p className="pb-7 maxw text-lg text-[#001845]">"Creative front-end developer and UI/UX designer passionate about crafting visually stunning and user-friendly digital experiences. I specialize in turning ideas into intuitive interfaces that deliver exceptional user experiences."</p>
 
                     <ul className="pb-7 flex space-x-4">
                     <li className="icon-content group">
@@ -115,21 +93,13 @@ const Hero = () => {
                     </li>
                 </ul>
                 <div className="flex gap-7">
-                    <button className="relative hidden md:flex items-center justify-center gap-3 px-10 py-1 bg-[#001845] text-white font-semibold rounded-lg hover:bg-transparent hover:border-[#001845] hover:border-2 hover:text-[#001845] focus:outline-none focus:ring-2 focus:ring-blue-300">Hire Me</button>   
-                    <button className="relative hidden md:flex items-center justify-center gap-3 px-6 py-1 hover:bg-[#001845] hover:text-white font-semibold rounded-lg bg-transparent border-[#001845] border-4 text-[#001845] focus:outline-none focus:ring-2 focus:ring-blue-300">Contact Me</button>   
+                    <button className="relative hidden md:flex items-center justify-center gap-3 px-10 py-1 bg-[#001845] text-white font-semibold rounded-lg hover:bg-transparent hover:border-[#001845] hover:border-2 hover:text-[#001845] focus:outline-none focus:ring-2 focus:ring-blue-300">Download CV</button>   
                 </div>
                 </div>
             </div>
-            
-            <div className="w-full lg:w-1/2">
-            <div className="">
-                <img src="./src/assets/hero-my-picture.png" alt="Kashmi Fernando" className="w-full max-w-xs"/>
-            </div>
-            </div> 
-               
         </div>
     </div>
   )
 }
 
-export default Hero
+export default About

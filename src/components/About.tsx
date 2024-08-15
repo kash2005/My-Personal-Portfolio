@@ -11,7 +11,7 @@ const About = () => {
             </div>
             <div className="w-full lg:w-1/2">
                 <div className="flex flex-col items-center lg:items-start">
-
+                
                     <h1 className="pt-16 pb-1 text-[rgba(0,0,0,0.6)] lg:mt-16">let me introduce myself</h1>
                     <h1 className="pb-12 text-3xl font-semibold text-[#001845]">About me</h1>
                     <p className="pb-7 maxw text-lg text-[#001845]">"Creative front-end developer and UI/UX designer passionate about crafting visually stunning and user-friendly digital experiences. I specialize in turning ideas into intuitive interfaces that deliver exceptional user experiences."</p>

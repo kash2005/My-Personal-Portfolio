@@ -1,4 +1,5 @@
 import About from './components/About.tsx'
+import Contact from './components/Contact.tsx'
 import Hero from './components/Hero.tsx'
 import Navbar from './components/Navbar.tsx'
 import Projects from './components/Projects.tsx'
@@ -12,6 +13,7 @@ function App() {
       <About />
       <Services />
       <Projects />
+      <Contact />
     </div>
   )
 }

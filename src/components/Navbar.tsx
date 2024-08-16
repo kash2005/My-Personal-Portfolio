@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faBars, faTimes} from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = () => {
 
@@ -9,18 +11,21 @@ const Navbar = () => {
       <a href='#'>
         <img src="./src/assets/logo.png" alt='' className='w-57 h-[33] hover:scale-105 transition-all'></img>
       </a>  
-      <ul className='hidden xl:flex items-center gap-9  text-base'>
-        <li className='p-3 text-[#001845] hover:underline hover:bg-[#001845] hover:text-white rounded-md transition-all cursor-pointer'>Home</li>
-        <li className='p-3 text-[#001845] hover:underline hover:bg-[#001845] hover:text-white rounded-md transition-all cursor-pointer'>About me</li>
-        <li className='p-3 text-[#001845] hover:underline hover:bg-[#001845] hover:text-white rounded-md transition-all cursor-pointer'>Services</li>
-        <li className='p-3 text-[#001845] hover:underline hover:bg-[#001845] hover:text-white rounded-md transition-all cursor-pointer'>Projects</li>
-        <li className='p-3 text-[#001845] hover:underline hover:bg-[#001845] hover:text-white rounded-md transition-all cursor-pointer'>Contact me</li>
+      <ul className='hidden lg:flex items-center gap-9  text-base'>
+        <li className='p-3 text-[#001845] hover:border-b-2 border-[#001845] cursor-pointer'>Home</li>
+        <li className='p-3 text-[#001845] hover:border-b-2 border-[#001845] cursor-pointer'>About me</li>
+        <li className='p-3 text-[#001845] hover:border-b-2 border-[#001845] cursor-pointer'>Services</li>
+        <li className='p-3 text-[#001845] hover:border-b-2 border-[#001845] cursor-pointer'>Projects</li>
+        <li className='p-3 text-[#001845] hover:border-b-2 border-[#001845] cursor-pointer'>Contact me</li>
       </ul>
-      <button className="relative hidden md:flex items-center justify-center gap-3 px-4 py-2 bg-white text-[#001845] font-semibold rounded-lg hover:bg-[#001845] hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-300">view my work</button>
-      
-      <i className='bx bx-menu xl:hidden block text-5xl cursor-pointer' onClick={() => setIsMenuOpen(!isMenuOpen)}></i>
 
-      <div className={`absolute xl:hidden top-24 left-0 w-full bg-white flex flex-col items-center gap-6 font-semibold text-lg transform transition-transform ${isMenuOpen ? "opacity-100" : "opacity-0"}`}
+      <FontAwesomeIcon
+                        icon={isMenuOpen ? faTimes : faBars}
+                        size="2x"
+                        onClick={() => setIsMenuOpen(!isMenuOpen)}
+                        className="cursor-pointer xl:hidden block"
+                    />
+      <div className={`absolute lg:hidden top-24 left-0 w-full z-10 bg-white flex flex-col items-center gap-6 font-semibold text-lg transform transition-transform ${isMenuOpen ? "opacity-100" : "opacity-0"}`}
 
       style={{transition:"transform 0.3 ease,opacity 0.3s ease"}}
       >

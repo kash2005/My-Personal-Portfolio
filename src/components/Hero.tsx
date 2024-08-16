@@ -24,7 +24,6 @@ const Hero = () => {
 
                     <h1 className="pt-16 pb-1 text-2xl text-[#001845]  lg:mt-16 lg:text-xl">Hi, I’m</h1>
                     <h1 className="pb-1 text-5xl text-[#001845] font-semibold lg:text-4xl">Kashmi Fernando</h1>
-                    <h1 className="pb-1 text-xl text-[#001845] lg:text-base">I'm 19 years old.</h1>
                     <h1 className="pb-3 text-xl text-[#001845] lg:text-base">I'm a design-focused and passionate.</h1>
 
                     <div className="pb-7 overflow-hidden w-full flex items-center justify-center">

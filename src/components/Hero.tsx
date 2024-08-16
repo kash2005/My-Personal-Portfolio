@@ -17,28 +17,42 @@ const Hero = () => {
         }, []);    
 
   return (
-    <div className="border-b border-neutral-900 pb-4 md:pl-40">
-        <div className="flex flex-wrap">
-            <div className="w-full lg:w-1/2">
-                <div className="flex flex-col items-center lg:items-start">
+<div
+  className="relative min-h-[95vh] bg-cover bg-center bg-no-repeat md:min-h-[95vh]"
+  style={{
+    backgroundImage: "url('/src/assets/portfolio-background.jpg')",
+    backgroundSize: "cover",       // Ensures the image covers the entire container
+    backgroundPosition: "center",  // Centers the image
+    backgroundRepeat: "no-repeat", // Prevents the image from repeating
+  }}
+>
+  <div className="absolute inset-0 flex justify-center items-center">
+    <div className="text-center bg-white bg-opacity-70 p-8 w-fit lg:max-w-screen-lg  md:max-w-screen-md sm:max-w-screen-sm max-w-80 rounded-lg shadow-lg">
+      <h1 className="text-lg sm:text-2xl my-1 text-[#001845]">Hi, I’m</h1>
+      <h1 className="text-3xl sm:text-5xl my-2 text-[#001845] font-semibold">Kashmi Fernando</h1>
+      <h1 className="text-[#001845] sm:text-lg text-sm">I'm a design-focused and passionate.</h1>
 
-                    <h1 className="pt-16 pb-1 text-2xl text-[#001845]  lg:mt-16 lg:text-xl">Hi, I’m</h1>
-                    <h1 className="pb-1 text-5xl text-[#001845] font-semibold lg:text-4xl">Kashmi Fernando</h1>
-                    <h1 className="pb-3 text-xl text-[#001845] lg:text-base">I'm a design-focused and passionate.</h1>
+      <div className="overflow-hidden w-full flex items-center justify-center lg:items-center my-4">
+        <div
+          className="flex transition-transform duration-500"
+          style={{
+            transform: `translateX(-${currentText * 100}%)`,
+            width: `${texts.length * 100}%`,
+          }}
+        >
+          {texts.map((text, index) => (
+            <div
+              key={index}
+              className="w-full flex-shrink-0 flex text-[#001845] text-2xl sm:text-3xl font-semibold justify-center"
+            >
+              {text}
+            </div>
+          ))}
+        </div>
+      </div>
 
-                    <div className="pb-7 overflow-hidden w-full flex items-center justify-center">
-                        <div className="flex transition-transform duration-500"
-                        style={{ transform: `translateX(-${currentText * 100}%)`, width: `${texts.length * 100}%` }}>
-                            {texts.map((text, index) => (
-                                <div key={index} className="w-full flex-shrink-0 flex text-[#001845] text-3xl font-semibold">
-                                    {text}
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-
-                    <ul className="pb-7 flex space-x-4">
-                    <li className="icon-content group">
+      <ul className="flex justify-center space-x-4 my-5">
+      <li className="icon-content group">
                         <a
                         href="https://linkedin.com/"
                         aria-label="LinkedIn"
@@ -112,22 +126,23 @@ const Hero = () => {
                             Instagram
                         </div>
                     </li>
-                </ul>
-                <div className="flex gap-7">
-                    <button className="relative hidden md:flex items-center justify-center gap-3 px-10 py-1 bg-[#001845] text-white font-semibold rounded-lg hover:bg-transparent hover:border-[#001845] hover:border-2 hover:text-[#001845] focus:outline-none focus:ring-2 focus:ring-blue-300">Hire Me</button>   
-                    <button className="relative hidden md:flex items-center justify-center gap-3 px-6 py-1 hover:bg-[#001845] hover:text-white font-semibold rounded-lg bg-transparent border-[#001845] border-4 text-[#001845] focus:outline-none focus:ring-2 focus:ring-blue-300">Contact Me</button>   
-                </div>
-                </div>
-            </div>
-            
-            <div className="w-full lg:w-1/2">
-            <div className="">
-                <img src="./src/assets/hero-my-picture.png" alt="Kashmi Fernando" className="w-full max-w-xs"/>
-            </div>
-            </div> 
-               
-        </div>
+      </ul>
+
+      <div className="flex justify-center space-x-4 mt-4">
+        <button className="px-6 py-2 bg-[#001845] text-white font-semibold rounded-lg hover:bg-transparent hover:border-[#001845] hover:border-2 hover:text-[#001845] focus:outline-none focus:ring-2 focus:ring-blue-300">
+          Hire Me
+        </button>
+        <button className="px-6 py-2 hover:bg-[#001845] hover:text-white font-semibold rounded-lg bg-transparent border-[#001845] border-2 text-[#001845] focus:outline-none focus:ring-2 focus:ring-blue-300">
+          Contact Me
+        </button>
+      </div>
     </div>
+  </div>
+</div>
+
+
+
+
   )
 }
 

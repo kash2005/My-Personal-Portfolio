@@ -54,7 +54,7 @@ const Hero = () => {
       <ul className="flex justify-center space-x-4 my-5">
       <li className="icon-content group">
                         <a
-                        href="https://linkedin.com/"
+                        href="https://www.linkedin.com/in/kashmi-fernando-31976427b"
                         aria-label="LinkedIn"
                         className="flex items-center justify-center w-12 h-12 rounded-full bg-gray-200 group-hover:bg-blue-700">
                             <svg
@@ -73,7 +73,7 @@ const Hero = () => {
                     </li>
                     <li className="icon-content group">
                         <a
-                        href="https://www.github.com/"
+                        href="https://github.com/kash2005/"
                         aria-label="GitHub"
                         className="flex items-center justify-center w-12 h-12 rounded-full bg-gray-200 group-hover:bg-gray-800">
                             <svg
@@ -92,7 +92,7 @@ const Hero = () => {
                     </li>
                     <li className="group">
                         <a
-                        href="https://www.facebook.com/"
+                        href="https://web.facebook.com/kashmi%20fernando?_rdc=1&_rdr"
                         aria-label="Facebook"
                         className="flex items-center justify-center w-12 h-12 rounded-full bg-gray-200 group-hover:bg-blue-600">
                             <svg
@@ -109,7 +109,7 @@ const Hero = () => {
                     </li>
                     <li className="icon-content group">
                         <a
-                        href="https://www.instagram.com/"
+                        href="https://www.instagram.com/kash_fernando"
                         aria-label="Instagram"
                         className="flex items-center justify-center w-12 h-12 rounded-full bg-gray-200 group-hover:bg-gradient-to-tr group-hover:from-purple-400 group-hover:to-pink-500">
                             <svg

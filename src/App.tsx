@@ -7,7 +7,7 @@ import Services from './components/Services.tsx'
 function App() {
 
   return (
-    <div className="w-full h-full absolute bg-white overflow-x-hidden">
+    <div className="w-full h-full bg-white overflow-x-hidden">
       <Navbar />
       <Hero />
       <About />

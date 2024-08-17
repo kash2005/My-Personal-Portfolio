@@ -2,7 +2,7 @@ import React from 'react';
 
 const Services = () => {
   return (
-    <div className="py-20 px-8 md:px-32 bg-white">
+    <div className="py-20 px-8 md:px-32 bg-white" id="services">
       <div className="text-center mb-10">
         <p className="text-[rgba(0,0,0,0.6)] mt-2">what i will do for you</p>
         <h2 className="text-3xl font-semibold text-[#001845]">Services</h2>

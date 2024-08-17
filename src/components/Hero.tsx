@@ -18,7 +18,7 @@ const Hero = () => {
 
   return (
 <div
-  className="relative min-h-[95vh] bg-cover bg-center bg-no-repeat md:min-h-[95vh]"
+  className="relative min-h-screen bg-cover bg-center bg-no-repeat" id="home"
   style={{
     backgroundImage: "url('/src/assets/portfolio-background.jpg')",
     backgroundSize: "cover",       // Ensures the image covers the entire container
@@ -27,7 +27,7 @@ const Hero = () => {
   }}
 >
   <div className="absolute inset-0 flex justify-center items-center">
-    <div className="text-center bg-white bg-opacity-70 p-8 w-fit lg:max-w-screen-lg  md:max-w-screen-md sm:max-w-screen-sm max-w-80 rounded-lg shadow-lg">
+    <div className="text-center bg-white bg-opacity-70 p-2 w-fit lg:max-w-screen-lg  md:max-w-screen-md sm:max-w-screen-sm max-w-80 rounded-lg shadow-lg">
       <h1 className="text-lg sm:text-2xl my-1 text-[#001845]">Hi, I’m</h1>
       <h1 className="text-3xl sm:text-5xl my-2 text-[#001845] font-semibold">Kashmi Fernando</h1>
       <h1 className="text-[#001845] sm:text-lg text-sm">I'm a design-focused and passionate.</h1>
@@ -130,10 +130,10 @@ const Hero = () => {
 
       <div className="flex justify-center space-x-4 mt-4">
         <button className="px-6 py-2 bg-[#001845] text-white font-semibold rounded-lg hover:bg-transparent hover:border-[#001845] hover:border-2 hover:text-[#001845] focus:outline-none focus:ring-2 focus:ring-blue-300">
-          Hire Me
+          <a href="#contact">Hire Me</a>
         </button>
-        <button className="px-6 py-2 hover:bg-[#001845] hover:text-white font-semibold rounded-lg bg-transparent border-[#001845] border-2 text-[#001845] focus:outline-none focus:ring-2 focus:ring-blue-300">
-          Contact Me
+        <button className="px-6 py-2 hidden hover:bg-[#001845] hover:text-white font-semibold rounded-lg bg-transparent border-[#001845] border-2 text-[#001845] focus:outline-none focus:ring-2 focus:ring-blue-300 sm:block">
+          <a href="#contact">Contact Me</a>
         </button>
       </div>
     </div>

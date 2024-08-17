@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <footer className="bg-[#001845] text-white py-8">
+    <footer className="bg-[#001845] text-white py-8" id="contact">
       <div className="container mx-auto px-4 md:px-8 lg:px-16">
         {/* Email Subscription Form */}
         <div className="flex justify-center mb-8">
@@ -72,11 +72,11 @@ const Contact = () => {
           <div className="lg:text-left">
             <h4 className="font-bold mb-2">Quick Links</h4>
             <ul className="space-y-2">
-            <li><a href="#" className="flex items-center space-x-2 hover:underline"><i className="fas fa-arrow-left w-4 h-4 text-white"></i><span>Home</span></a></li>
-                <li><a href="#" className="flex items-center space-x-2 hover:underline"><i className="fas fa-arrow-left w-4 h-4 text-white"></i><span>About Me</span></a></li>
-                <li><a href="#" className="flex items-center space-x-2 hover:underline"><i className="fas fa-arrow-left w-4 h-4 text-white"></i><span>Services</span></a></li>
-                <li><a href="#" className="flex items-center space-x-2 hover:underline"><i className="fas fa-arrow-left w-4 h-4 text-white"></i><span>Projects</span></a></li>
-                <li><a href="#" className="flex items-center space-x-2 hover:underline"><i className="fas fa-arrow-left w-4 h-4 text-white"></i><span>Contact Me</span></a></li>
+            <li><a href="#home" className="flex items-center space-x-2 hover:underline"><i className="fas fa-arrow-left w-4 h-4 text-white"></i><span>Home</span></a></li>
+                <li><a href="#about" className="flex items-center space-x-2 hover:underline"><i className="fas fa-arrow-left w-4 h-4 text-white"></i><span>About Me</span></a></li>
+                <li><a href="#services" className="flex items-center space-x-2 hover:underline"><i className="fas fa-arrow-left w-4 h-4 text-white"></i><span>Services</span></a></li>
+                <li><a href="#projects" className="flex items-center space-x-2 hover:underline"><i className="fas fa-arrow-left w-4 h-4 text-white"></i><span>Projects</span></a></li>
+                <li><a href="#contact" className="flex items-center space-x-2 hover:underline"><i className="fas fa-arrow-left w-4 h-4 text-white"></i><span>Contact Me</span></a></li>
 
             </ul>
           </div>

@@ -1,7 +1,7 @@
 
 const About = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center py-6">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center py-6" id="about">
         {/* Left Side: Image */}
       <div className="mt-10 flex items-center justify-center">
         <img 

@@ -46,7 +46,7 @@ const Projects = () => {
           },
       ];
   return (
-    <div className="py-16 px-8 md:px-32 bg-white">
+    <div className="py-16 px-8 md:px-32 bg-white" id="projects">
       <div className="text-center mb-10">
         <p className="text-[rgba(0,0,0,0.6)] mt-2">Things I have built so far</p>
         <h2 className="text-3xl font-semibold text-[#001845]">Latest Projects</h2>

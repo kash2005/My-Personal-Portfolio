@@ -63,8 +63,8 @@ const About = () => {
       </li>
     </ul>
     <a
-      href="./src/assets/resume.pdf"
-      download="Kashmi-Venushika-Resume.pdf"
+      href="./src/assets/pdf/Kashmi_Fernando_Front_End_Developer_CV.pdf"
+      download="Kashmi_Fernando_Front_End_Developer_CV.pdf"
       className="rounded-md border-2 border-[#001845] bg-[#001845] px-7 py-3 font-semibold text-white transition-all hover:bg-white hover:text-[#001845]"
     >
       Download CV

@@ -4,11 +4,7 @@ import {faBars, faTimes} from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = () => {
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  
-    const toggleMenu = () => {
-      setIsMenuOpen(!isMenuOpen);
-    };
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   
     const closeMenu = () => {
       setIsMenuOpen(false);

@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Services = () => {
   return (
     <div className="py-20 px-8 md:px-32 bg-white" id="services">

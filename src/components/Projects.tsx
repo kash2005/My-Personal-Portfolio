@@ -21,7 +21,7 @@ const Projects = () => {
           link: 'https://github.com/kash2005/Hello-Shoe-Shop-FrontEnd'
         },
         {
-          title: 'Portfolio',
+          title: 'Old Portfolio',
           description: 'Developed using HTML, CSS, and JavaScript.',
           imgSrc: './src/assets/portfolio-old.png',
           link: 'https://github.com/kash2005/MyPortfolio/tree/styles'
@@ -39,11 +39,17 @@ const Projects = () => {
           link: 'https://github.com/kash2005/Juice-Bar-Management-System2'
         },
         {
-            title: 'D24 Hostel Management System',
-            description: '"Built with JavaFX, layered architecture and Hibernate."',
-            imgSrc: './src/assets/hostel.png',
-            link: 'https://github.com/kash2005/D24_Hostel_Management_System'
-          },
+          title: 'D24 Hostel Management System',
+          description: '"Built with JavaFX, layered architecture and Hibernate."',
+          imgSrc: './src/assets/hostel.png',
+          link: 'https://github.com/kash2005/D24_Hostel_Management_System'
+        },
+        {
+          title: 'New Portfolio',
+          description: 'Developed using React Js, Vite, Type Script, Tailwind CSS.',
+          imgSrc: './src/assets/portfolio-new.png',
+          link: 'https://github.com/kash2005/My-Personal-Portfolio'
+        },
       ];
   return (
     <div className="py-16 px-8 md:px-32 bg-white" id="projects">

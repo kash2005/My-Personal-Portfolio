@@ -24,15 +24,16 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="text-center lg:text-left">
             <h4 className="font-bold mb-2">Contact</h4>
-            <p>Phone: +94 70 487 2266</p>
+            <p>Phone: +94 70 487 2265</p>
             <p>
               Email:{" "}
               <a
                 href="mailto:kashmifernando3@gmail.com"
                 className="text-white hover:underline"
-              >
-                kashmifernando3@gmail.com
+                >
+                  kashmifernando3@gmail.com
               </a>
+
             </p>
             <p>Address: Panadura, Kalutara, Sri Lanka</p>
           </div>
@@ -54,9 +55,9 @@ const Contact = () => {
                   </a>
                 </li>
                 <li className="flex items-center space-x-2">
-                  <a href="https://web.facebook.com/kashmi%20fernando?_rdc=1&_rdr" className="flex items-center space-x-2 hover:underline">
-                    <i className="fab fa-facebook w-5 h-5 text-white"></i>
-                    <span>Facebook</span>
+                  <a href="https://www.behance.net/kashmifernando" className="flex items-center space-x-2 hover:underline">
+                    <i className="fab fa-behance w-5 h-5 text-white"></i>
+                    <span>Behance</span>
                   </a>
                 </li>
                 <li className="flex items-center space-x-2">

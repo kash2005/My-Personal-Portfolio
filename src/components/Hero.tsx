@@ -90,22 +90,16 @@ const Hero = () => {
                             GitHub
                         </div>
                     </li>
-                    <li className="group">
-                        <a
-                        href="https://web.facebook.com/kashmi%20fernando?_rdc=1&_rdr"
-                        aria-label="Facebook"
-                        className="flex items-center justify-center w-12 h-12 rounded-full bg-gray-200 group-hover:bg-blue-600">
-                            <svg
-                            version="1.1"
-                            viewBox="0 0 100 100"
-                            className="w-7 h-7 text-[#001845] group-hover:text-white"
-                            fill="currentColor">
-                                <path d="M50,4C24.7,4,4,24.7,4,50c0,20.3,13.3,37.5,31.5,43.4v-30.7h-9.4v-12.1h9.4v-9c0-9.3,5.5-14.4,13.7-14.4c3.9,0,7.3,0.3,8.3,0.4v9.6h-5.7c-4.5,0-5.4,2.1-5.4,5.3v7h10.8l-1.4,12.1h-9.4v30.7C72.7,87.5,86,70.3,86,50C86,24.7,65.3,4,50,4z"></path>
-                            </svg>
-                        </a>
-                        <div className="tooltip text-sm mt-1 hidden group-hover:block text-center">
-                            Facebook
-                        </div>
+                    <li className="icon-content group">
+                      <a
+                      href="https://www.behance.net/kashmifernando"
+                      aria-label="Behance"
+                      className="flex items-center justify-center w-12 h-12 rounded-full bg-gray-200 group-hover:bg-gradient-to-tr group-hover:from-blue-400 group-hover:to-blue-600">
+                        <i className="fab fa-behance text-2xl text-[#001845] group-hover:text-white"></i>
+                      </a>
+                      <div className="tooltip text-sm mt-1 hidden group-hover:block text-center">
+                        Behance
+                      </div>
                     </li>
                     <li className="icon-content group">
                         <a

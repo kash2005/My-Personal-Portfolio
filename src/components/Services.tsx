@@ -16,7 +16,7 @@ const Services = () => {
           </p>
           <div className="flex flex-col items-center gap-4">
             <button className="px-4 py-1 rounded-lg bg-transparent border-[rgba(0, 24, 69, 0.6)] border-2 text-[#606060]">Figma</button>
-            <button className="px-10 py-1 bg-[#001845] text-white font-semibold rounded-lg hover:bg-transparent hover:border-[#001845] hover:border-2 hover:text-[#001845] focus:outline-none focus:ring-2 focus:ring-blue-300">View My Figma Designs</button>
+            {/* <button className="px-10 py-1 bg-[#001845] text-white font-semibold rounded-lg hover:bg-transparent hover:border-[#001845] hover:border-2 hover:text-[#001845] focus:outline-none focus:ring-2 focus:ring-blue-300">View My Figma Designs</button> */}
           </div>
         </div>
 

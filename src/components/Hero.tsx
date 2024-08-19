@@ -26,6 +26,7 @@ const Hero = () => {
     backgroundRepeat: "no-repeat", // Prevents the image from repeating
   }}
 >
+  {/* checking deploy */}
   <div className="absolute inset-0 flex justify-center items-center">
     <div className="text-center bg-white bg-opacity-70 p-2 w-fit lg:max-w-screen-lg  md:max-w-screen-md sm:max-w-screen-sm max-w-80 rounded-lg shadow-lg">
       <h1 className="text-lg sm:text-2xl my-1 text-[#001845]">Hi, I’m</h1>
